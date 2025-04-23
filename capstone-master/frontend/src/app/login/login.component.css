@@ -1,0 +1,194 @@
+/* General Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg');
+  /* This image shows a soccer stadium/field */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  
+}
+
+/* Overlay */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 80px;
+}
+/* Header */
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Login Box */
+.login-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px !important;
+  margin: auto;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.login-subtext {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .form-control {
+    padding: 8px;
+  }
+}
+
+.app-header {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.app-header i {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.app-header h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: Add hover effect */
+.app-header i {
+  transition: transform 0.3s ease;
+}
+
+.app-header:hover i {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-header {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .app-header i {
+    font-size: 24px;
+  }
+  
+  .app-header h4 {
+    font-size: 20px;
+  }
+}

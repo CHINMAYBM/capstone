@@ -1,0 +1,7 @@
+package com.ustcapstone.atheleteservice.exception;
+
+public class PlayerCreationException extends RuntimeException {
+    public PlayerCreationException(String message) {
+        super(message);
+    }
+}
